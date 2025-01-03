@@ -18,11 +18,16 @@ import Nav from "../components/Nav.astro";
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="stylesheet" href="https://unpkg.com/tabler-icons@latest/icon-font/tabler-icons.min.css">
 		<title>{title}</title>
 	</head>
 	<body>
 		<Nav />
-		<slot />
+
+		<main>
+			<slot />
+		</main>
+		
 		<Footer />
 	</body>
 </html>
